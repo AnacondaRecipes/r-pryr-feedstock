@@ -10,8 +10,8 @@ package:
 source:
   fn: pryr_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/pryr_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/pryr/pryr_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/pryr_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/pryr/pryr_{{ version }}.tar.gz
   sha256: 6acd88341dde4fe247a5cafd3949b281dc6742b7d60f68b57c1feb84b96739ac
 
 
