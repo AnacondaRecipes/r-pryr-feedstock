@@ -1,4 +1,4 @@
-{% set version = '0.1.3' %}
+{% set version = '0.1.4' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,18 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pryr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pryr/pryr_{{ version }}.tar.gz
-  sha256: 6acd88341dde4fe247a5cafd3949b281dc6742b7d60f68b57c1feb84b96739ac
-
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
+  sha256: d39834316504c49ecd4936cbbcaf3ee3dae6ded287af42475bf38c9e682f721b
 
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -79,7 +73,7 @@ extra:
 # The original CRAN metadata for this package was:
 
 # Package: pryr
-# Version: 0.1.3
+# Version: 0.1.4
 # Title: Tools for Computing on the Language
 # Description: Useful tools to pry back the covers of R and understand the language at a deeper level.
 # Authors@R: c( person("Hadley", "Wickham", ,"hadley@rstudio.com", c("aut", "cre")), person("R Core team", role = "ctb", comment = "Some code extracted from base R") )
@@ -92,11 +86,11 @@ extra:
 # Suggests: testthat (>= 0.8.0)
 # RoxygenNote: 6.0.1
 # NeedsCompilation: yes
-# Packaged: 2017-10-30 15:32:57 UTC; lionel
+# Packaged: 2018-02-17 16:16:12 UTC; hadley
 # Author: Hadley Wickham [aut, cre], R Core team [ctb] (Some code extracted from base R)
 # Maintainer: Hadley Wickham <hadley@rstudio.com>
 # Repository: CRAN
-# Date/Publication: 2017-10-30 15:34:16 UTC
+# Date/Publication: 2018-02-18 04:42:23 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
